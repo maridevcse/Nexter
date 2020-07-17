@@ -1,0 +1,51 @@
+.relators{
+    background-color: $color-secondary;
+    grid-column: col 7/full-end;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    @media only screen and(max-width:$bp-med){
+        grid-column: 1/-1;
+      }
+   h3{
+       display: flex;
+       justify-content: center;
+       margin:2rem;
+   }
+    &-container{
+        @media only screen and(max-width:$bp-med){
+            grid-template-columns: repeat(3,min-content max-content);
+          }
+
+          @media only screen and (max-width: $bp-small) {
+            grid-template-columns: min-content max-content;
+        }
+      display: grid;
+      grid-template-columns: min-content max-content;
+      grid-gap: 4vh;
+      align-content: center;
+    justify-content: center;
+       margin:4rem;
+      align-items: center;
+      justify-items: center;
+      
+    }
+
+    &-image{
+      height:7.5rem;
+      width: 8rem;
+      border-radius: 50%;
+    }
+    
+    p{
+     font-size: 2rem;
+     color:white;
+     font-weight: 200;
+     margin-bottom: .4rem;
+    }
+    span{
+      text-transform: uppercase;
+      color: #fff;
+      
+    }
+}

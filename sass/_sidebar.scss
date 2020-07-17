@@ -1,0 +1,42 @@
+.sidebar{
+    background-color: $color-primary;
+    grid-row: first-start/col-end 3;
+    grid-column: 1/2;
+   @media only screen and(max-width:$bp-largest){
+       grid-column: 1/-1;
+       grid-row: 1/2;
+   }
+    
+     
+    &-button{
+        border: 0;
+        background-color: $color-grey-dark-1;
+        height: .5rem;
+        width: 5rem;
+       position: relative;
+       display: block;
+       margin-top: 2rem;
+       margin-left: .5rem;
+
+        &::before{
+        content: "";
+        background-color: $color-grey-dark-1;
+        height: .5rem;
+        width: 5rem;
+        display: block;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+        
+        }
+        &::after{
+        content: "";
+        background-color:  $color-grey-dark-1;
+        height: .5rem;
+        width: 5rem;
+        display: block;
+       
+        
+        }
+
+    }
+}
